@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="質數列表" Height="730" Width="800">
+    <Grid>
+        <Label Content="請輸入一個數值N" HorizontalAlignment="Left" Margin="40,33,0,0" VerticalAlignment="Top" Width="210" Height="35" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="250,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7F0F0"/>
+        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="640,33,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" Click="button1_Click"/>
+        <TextBlock x:Name="textblock_prime" HorizontalAlignment="Left" Margin="50,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="690" Background="#FFD1F2C0" FontSize="16" Padding="5,5,5,5"/>
+        <TextBlock x:Name="textblock_multiple" HorizontalAlignment="Left" Margin="50,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="450" Width="690" Background="#FFF6E7F7" FontSize="16" Padding="5,5,5,5"/>
+    </Grid>
+</Window>
