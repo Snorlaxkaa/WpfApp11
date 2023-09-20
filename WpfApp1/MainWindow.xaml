@@ -7,10 +7,21 @@
         mc:Ignorable="d"
         Title="質數列表" Height="730" Width="800">
     <Grid>
-        <Label Content="請輸入一個數值N" HorizontalAlignment="Left" Margin="49,34,0,0" VerticalAlignment="Top" Width="152" Height="35" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFE08E8E"/>
-        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="250,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFFFB6AF"/>
-        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="640,33,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" Click="button1_Click"/>
-        <TextBlock x:Name="textblock_prime" HorizontalAlignment="Left" Margin="50,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="690" Background="#FFC0C8F2" FontSize="16" Padding="5,5,5,5"/>
-        <TextBlock x:Name="textblock_multiple" HorizontalAlignment="Left" Margin="50,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="450" Width="690" Background="#FF98C8D8" FontSize="16" Padding="5,5,5,5"/>
+        <Label Content="請輸入第一個邊長" HorizontalAlignment="Left" Margin="44,25,0,0" VerticalAlignment="Top" Width="152" Height="35" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
+        <Label Content="請輸入第二個邊長" HorizontalAlignment="Left" Margin="44,68,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
+        <Label Content="請輸入第三個邊長" HorizontalAlignment="Left" Margin="45,111,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="213,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7"/>
+        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="612,23,0,0" VerticalAlignment="Top" Height="125" Width="130" FontSize="18" Click="button1_Click"/>
+        <TextBlock x:Name="textblock_multiple" HorizontalAlignment="Left" Margin="46,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="702" FontSize="16" Padding="5,5,5,5">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF568C8B"/>
+                    <GradientStop Color="#FF27A4CE" Offset="1"/>
+                    <GradientStop Color="#FF40CBC8" Offset="0.133"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBox x:Name="textbox1複製__C_" HorizontalAlignment="Left" Margin="213,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7"/>
+        <TextBox x:Name="textbox1複製__C_1" HorizontalAlignment="Left" Margin="213,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7"/>
     </Grid>
 </Window>
