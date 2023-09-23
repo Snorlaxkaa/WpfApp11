@@ -5,12 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="質數列表" Height="730" Width="800">
+        Title="判斷三角形" Height="730" Width="800">
     <Grid>
-        <Label Content="請輸入一個數值N" HorizontalAlignment="Left" Margin="49,34,0,0" VerticalAlignment="Top" Width="152" Height="35" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFE08E8E"/>
-        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="250,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFFFB6AF"/>
-        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="640,33,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" Click="button1_Click"/>
-        <TextBlock x:Name="textblock_prime" HorizontalAlignment="Left" Margin="50,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="690" Background="#FFC0C8F2" FontSize="16" Padding="5,5,5,5"/>
-        <TextBlock x:Name="textblock_multiple" HorizontalAlignment="Left" Margin="50,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="450" Width="690" Background="#FF98C8D8" FontSize="16" Padding="5,5,5,5"/>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Label Content="請輸入第一個邊長" HorizontalAlignment="Left" Margin="44,25,0,0" VerticalAlignment="Top" Width="152" Height="35" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
+        <Label Content="請輸入第二個邊長" HorizontalAlignment="Left" Margin="44,68,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
+        <Label Content="請輸入第三個邊長" HorizontalAlignment="Left" Margin="45,111,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="213,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="213,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="213,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7" BorderBrush="{x:Null}"/>
+        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="612,23,0,0" VerticalAlignment="Top" Height="125" Width="130" FontSize="18" Click="button1_Click"/>
+        <TextBlock x:Name="textblock_multiple" HorizontalAlignment="Left" Margin="43,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="702" FontSize="16" Padding="5,5,5,5">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF568C8B"/>
+                    <GradientStop Color="#FF27A4CE" Offset="1"/>
+                    <GradientStop Color="#FF40CBC8" Offset="0.133"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBox x:Name="textblock_multiple2" HorizontalAlignment="Left" Margin="47,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="702" FontSize="16" Padding="5,5,5,5">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB5C7C6" Offset="0.188"/>
+                    <GradientStop Color="#FF27A4CE" Offset="1"/>
+                    <GradientStop Color="#FFB7CB40" Offset="0.407"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="歷史" HorizontalAlignment="Left" Height="89" Margin="41,308,0,0" VerticalAlignment="Top" Width="111" FontSize="36"/>
     </Grid>
 </Window>
