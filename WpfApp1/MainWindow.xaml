@@ -10,31 +10,30 @@
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
-        <Label Content="請輸入第一個邊長" HorizontalAlignment="Left" Margin="44,25,0,0" VerticalAlignment="Top" Width="152" Height="35" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
-        <Label Content="請輸入第二個邊長" HorizontalAlignment="Left" Margin="44,68,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
-        <Label Content="請輸入第三個邊長" HorizontalAlignment="Left" Margin="45,111,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FFB7A7A7"/>
+        <Label Content="請輸入第一個邊長" HorizontalAlignment="Left" Margin="44,25,0,0" VerticalAlignment="Top" Width="152" Height="35" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FF9BB9F5"/>
+        <Label Content="請輸入第二個邊長" HorizontalAlignment="Left" Margin="44,68,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FF9BB9F5"/>
+        <Label Content="請輸入第三個邊長" HorizontalAlignment="Left" Margin="45,111,0,0" VerticalAlignment="Top" Width="152" Height="34" Foreground="#FFE90D0D" FontSize="18" FontWeight="Bold" Background="#FF9BB9F5"/>
         <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="213,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7" BorderBrush="{x:Null}"/>
         <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="213,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7" BorderBrush="{x:Null}"/>
-        <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="213,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7" BorderBrush="{x:Null}"/>
-        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="612,23,0,0" VerticalAlignment="Top" Height="125" Width="130" FontSize="18" Click="button1_Click"/>
-        <TextBlock x:Name="textblock_multiple" HorizontalAlignment="Left" Margin="43,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="702" FontSize="16" Padding="5,5,5,5">
+        <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="213,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" FontSize="18" Background="#FFF7DAD7" BorderBrush="{x:Null}" OpacityMask="#FFB13636">
+            <TextBox.SelectionTextBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.SelectionTextBrush>
+        </TextBox>
+        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="608,54,0,0" VerticalAlignment="Top" Height="61" Width="130" FontSize="18" Click="button1_Click" Background="#FFDCC5C5"/>
+        <TextBlock x:Name="textblock_multiple" HorizontalAlignment="Left" Margin="43,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="124" Width="347" FontSize="16" Padding="5,5,5,5">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF568C8B"/>
+                    <GradientStop Color="#FFC2D0D0"/>
                     <GradientStop Color="#FF27A4CE" Offset="1"/>
-                    <GradientStop Color="#FF40CBC8" Offset="0.133"/>
+                    <GradientStop Color="#FFDCE639" Offset="0.133"/>
                 </LinearGradientBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBox x:Name="textblock_multiple2" HorizontalAlignment="Left" Margin="47,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="702" FontSize="16" Padding="5,5,5,5">
-            <TextBox.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFB5C7C6" Offset="0.188"/>
-                    <GradientStop Color="#FF27A4CE" Offset="1"/>
-                    <GradientStop Color="#FFB7CB40" Offset="0.407"/>
-                </LinearGradientBrush>
-            </TextBox.Background>
-        </TextBox>
-        <Label Content="歷史" HorizontalAlignment="Left" Height="89" Margin="41,308,0,0" VerticalAlignment="Top" Width="111" FontSize="36"/>
+        <TextBox x:Name="textblock_multiple2" HorizontalAlignment="Center" Margin="0,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="184" Width="799" FontSize="16" Padding="5,5,5,5" TextChanged="textblock_multiple2_TextChanged" Background="#FFE8E3E3"/>
+        <Label Content="歷史紀錄" HorizontalAlignment="Left" Height="89" Margin="299,310,0,0" VerticalAlignment="Top" Width="153" FontSize="36" FontFamily="Adobe Caslon Pro Bold"/>
     </Grid>
 </Window>

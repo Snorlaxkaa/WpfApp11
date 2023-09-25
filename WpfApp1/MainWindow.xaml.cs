@@ -96,5 +96,10 @@ namespace WpfApp1
                 textblock_multiple2.Text += $"{tri.Side1}\t{tri.Side2}\t{tri.Side3}\t{tri.IsValid}\n";
             }
         }
+
+        private void textblock_multiple2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
